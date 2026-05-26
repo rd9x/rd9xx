@@ -25,9 +25,7 @@
   --border-rad: 4px;
 }
 
-  img {
-  max-width: 100vw!important;
-}
+
 
 *,
 *::before,
@@ -676,12 +674,14 @@ body.paused .animBtn:hover .animBtnBorder rect {
 
 
 @media (max-width: 768px) {
-  #btnPreview,
-  #btnToggleWrap,
-  #editorBtnSnippets,
-  #editorDivider {
-    display: none;
-  }
+  img {
+  max-width: 94vw!important;
+}
+
+.scroll-fill-svg {
+  height: 80px;
+}
+
 }
 
 /* #endregion */
@@ -742,7 +742,10 @@ body.paused .animBtn:hover .animBtnBorder rect {
   width: 100%;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(570px, 570px));
+  grid-template-columns: repeat(
+  auto-fit,
+  minmax(min(50vw, 570px), 570px)
+);
   justify-content: center;
   gap: 20px;
 }
@@ -755,7 +758,10 @@ body.paused .animBtn:hover .animBtnBorder rect {
   width: 100%;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(570px, 570px));
+  grid-template-columns: repeat(
+  auto-fit,
+  minmax(min(50vw, 570px), 570px)
+);
   justify-content: center;
   gap: 25px;
 }
@@ -772,7 +778,10 @@ body.paused .animBtn:hover .animBtnBorder rect {
   width: 100%;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(262px, 262px));
+  grid-template-columns: repeat(
+  auto-fit,
+  minmax(min(50vw, 262px), 262px)
+);
   justify-content: center;
   gap: 25px;
 }
@@ -785,7 +794,10 @@ body.paused .animBtn:hover .animBtnBorder rect {
   width: 100%;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(512px, 512px));
+  grid-template-columns: repeat(
+  auto-fit,
+  minmax(min(50vw, 512px), 512px)
+);
   justify-content: center;
   gap: 20px;
 }
@@ -827,7 +839,10 @@ body.paused .animBtn:hover .animBtnBorder rect {
   width: 100%;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(262px, 262px));
+  grid-template-columns: repeat(
+  auto-fit,
+  minmax(min(50vw, 262px), 262px)
+);
   justify-content: center;
   gap: 20px;
 }
